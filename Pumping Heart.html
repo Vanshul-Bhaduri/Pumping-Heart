@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Heart 2</title>
+    <style>
+        .heart_container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: black;
+            height: 710px;
+            width: 100%;
+        }
+        
+        .heart{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200px;
+            width: 200px;
+            transition-property: all;
+            transition: all;
+            animation-name: live;
+             animation-timing-function: ease;
+            /* background-color: aqua; */
+            animation-duration: 0.5s;
+            animation-iteration-count: infinite;
+        }
+        
+        @keyframes live {
+            from{
+
+            } 
+            to{
+                transform: scale(1.2);
+            }         
+        }
+        .p1,.p2,.p3{
+            background-color: rgb(255, 0, 0);
+            height: 100px;
+            width: 100px;
+            position: absolute;
+        }
+        .p2{
+            border-top-left-radius: 50px;
+            border-top-right-radius: 14px;
+            border-bottom-left-radius: 14px;
+            transform: rotate(45deg);
+        }
+        .p3{
+            /* background-color: rgba(0, 0, 255, 0.222); */
+            margin-left: 55px;
+        }
+        .p1{
+            /* background-color: rgba(255, 217, 0, 0.925); */
+            margin-left: -55px;
+        }
+
+        .p1,.p3{
+            border-radius: 50%;
+            margin-top: -56px;
+        }
+    </style>
+</head>
+<body>
+    <div class="heart_container">
+        <div class="heart">
+        <div class="p1"></div>
+        <div class="p2"></div>
+        <div class="p3"></div>
+    </div>
+    </div>
+</body>
+</html>
